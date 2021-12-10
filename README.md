@@ -8,7 +8,7 @@
 * [What I Learned](#what-i-learned)
 * [Bugs and Missing Features](#bugs-and-missing-features)
 * [Future](#future)
-* [How This Project Works](#how-this-project-works)
+* [Working Principle](#working-principle)
 
 ## Technologies
 At the time of creating this project I only knew about basic web technologies
@@ -39,7 +39,7 @@ At the end of 2020 I want to make a project which will showcase my skills,for th
 ## Future
 Because this web-app is not for practical use due to its horrible design, so I created its second version which is available on branch v2.0 of this repo
 
-## How This Project Works
+## Working Principle
 This web-app has single html file which consist of a simple form for sending messages and some basic layout elements, all the magic happens inside the javascript file
 #### Working
 * We are polling our Php scripts from javascript every single second
