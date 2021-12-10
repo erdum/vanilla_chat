@@ -37,7 +37,7 @@ At the end of 2020 I want to make a project which will showcase my skills,for th
 * [ ] I am using a non practical way of displaying both parties their online status and it is not working
 
 ## Future
-Because this web-app is not for practical use due to its horrible design, so I created its second version which is available on branch v2.0 of this repo
+Because this web-app is not for practical use due to its horrible design, so I created its second version which is available on branch v2.0.0 of this repo
 
 ## Working Principle
 This web-app has a single html file which consist of a simple form for sending messages and some basic layout elements, all the magic happens inside the javascript file
