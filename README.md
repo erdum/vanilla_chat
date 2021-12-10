@@ -40,13 +40,13 @@ At the end of 2020 I want to make a project which will showcase my skills,for th
 Because this web-app is not for practical use due to its horrible design, so I created its second version which is available on branch v2.0 of this repo
 
 ## Working Principle
-This web-app has single html file which consist of a simple form for sending messages and some basic layout elements, all the magic happens inside the javascript file
+This web-app has a single html file which consist of a simple form for sending messages and some basic layout elements, all the magic happens inside the javascript file
 #### Working
 * We are polling our Php scripts from javascript every single second
-* Inside polling function we first sent a get request to get.php file for getting all the messages from database
-* Our get.php just dumping all the messages from database to client then at client side we are checking all the messages for read flag
-* Read flag is set on those messages which are sent by client and not yet readed by other client 
-* After we found a message which has read flag set then we check its sender id to insure that it is not sended by us after that we will populate this new message to incoming messages
-* And then we take the id of this new message and send to update.php script which will unset the read flag of this new message making it old message
-* Inside the polling function we are also calling status.php script every second and we are sending current UTC time of the client to the server
-* By that our syste determine if user is currently online or not along with that we are also sending status about our typing status 
+* Inside polling function we first sent a get request to the get.php file for getting all the messages from database
+* Our get.php just dumping all the messages from database to the client then at client side we are checking all the messages for read flag
+* Read flag is set on those messages which are sent by the client and not yet readed by the other client 
+* After we found a message which has read flag set then we will check its sender id to insure that it is not sended by us, after that we will populate this new message to the incoming messages
+* And then we will take the id of this new message and send it to update.php script which will unset the read flag of this new message and making it old message
+* Inside the polling function we are also calling status.php script every second and we are sending the current UTC time of the client to the server
+* By that our system determine if user is currently online or not along with that we are also sending status about our typing status 
